@@ -1,0 +1,6 @@
+language: swift
+os: osx
+osx_image: xcode11.3
+xcode_project: CICD-TestProject.xcodeproj # path to your xcodeproj folder
+xcode_scheme: CICD-TestProject
+xcode_destination: platform=iOS Simulator,OS=11.2,name=iPhone 11 Pro
