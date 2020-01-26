@@ -20,15 +20,15 @@ class CICD_TestProjectTests: XCTestCase {
     }
 
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        squareTest()
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+//MARK: - Test Square function
+    
+    func squareTest() {
+        let number = 3
+        let squaredValue = number.square()
+        XCTAssert(squaredValue == 9, "SquaredValue is supposed to be 9")
     }
 
 }
