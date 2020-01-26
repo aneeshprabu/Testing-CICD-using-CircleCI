@@ -2,5 +2,5 @@ os: osx
 osx_image: xcode11.3
 language: swift
 script:
-- xcodebuild clean test -project CICD-TestProject.xcodeproj -scheme CICD-TestProject "platform=iOS Simulator,name=iPhone 11 Pro,OS=11.2"
+- xcodebuild clean test -project CICD-TestProject.xcodeproj -scheme CICD-TestProject "platform:iOS Simulator, id:ED16ACC3-522C-4C6E-8987-E689E92E2E76, OS:13.3, name:iPhone 11 Pro"
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone 11 Pro
